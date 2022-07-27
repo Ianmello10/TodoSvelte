@@ -5,14 +5,14 @@
 	import Trashimg from '../image/trash-outline.svg';
 
 	export let tasks = [];
-	let msg = 'Alterei';
+	let msg = '';
 	let title = "";
 
-	function addTask() {
+	function addTask() {  
 		let _id = Date.now() * Math.random();
 		 
-		tasks = tasks.concat({ id: _id, check:false, text: msg , titleTodo:title });
-		console.log(tasks);
+		tasks = tasks.concat({ id: _id, check:false, text: msg , titleTodo:title }); 
+		msg =  "" ;
 	}
 
 	function deleteTask(id) {
