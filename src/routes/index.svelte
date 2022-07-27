@@ -9,6 +9,9 @@
 	let title = "";
 
 	function addTask() {  
+		 
+		  if(msg === "")return alert("invalid")
+		
 		let _id = Date.now() * Math.random();
 		 
 		tasks = tasks.concat({ id: _id, check:false, text: msg , titleTodo:title }); 
