@@ -5,7 +5,7 @@
 	import Trashimg from '../image/trash-outline.svg';
 
 	export let tasks = [];
-	let msg = 'asdsa';
+	let msg = 'Alterei';
 	let title = "";
 
 	function addTask() {
