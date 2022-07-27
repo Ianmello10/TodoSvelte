@@ -10,7 +10,7 @@
 
 	function addTask() {  
 		 
-		  if(msg === "")return alert("invalid")
+		  if(msg === "")return ;
 		
 		let _id = Date.now() * Math.random();
 		 
