@@ -4,7 +4,7 @@
 	import Addimg from '../image/add-outline.svg';
 	import Trashimg from '../image/trash-outline.svg';
 
-	export let tasks = [];
+	 let tasks = [];
 	let msg = '';
 
 	function addTask() {
