@@ -6,16 +6,14 @@
 
 	export let tasks = [];
 	let msg = '';
-	let title = "";
 
-	function addTask() {  
-		 
-		  if(msg === "")return ;
-		
+	function addTask() {
+		if (msg === '') return;
+
 		let _id = Date.now() * Math.random();
-		 
-		tasks = tasks.concat({ id: _id, check:false, text: msg , titleTodo:title }); 
-		msg =  "" ;
+
+		tasks = tasks.concat({ id: _id, check: false, text: msg});
+		msg = '';
 	}
 
 	function deleteTask(id) {
@@ -58,17 +56,7 @@
 		</div>
 
 		<div id="container-task" class="w-[90%] mx-auto h-auto flex flex-col gap-y-2">
-			<div
-				class="w-full h-10 border-l-4   border-[#a181be]   rounded-sm px-2 bg-[#F0D9FF] flex justify-between items-center "
-			>
-				<p class="text-black ">Task exemplo</p>
-
-				<img
-					class="w-6 cursor-pointer transition-transform ease-out duration-150 hover:-translate-y-1"
-					src={Trashimg}
-					alt=""
-				/>
-			</div>
+		
 
 			{#each tasks as task}
 				<div
@@ -86,8 +74,7 @@
 				</div>
 			{/each}
 
-			<div class="mt-5">Total de Tarefas : {tasks.length} </div>
-		</div> 
-
+			<div class="mt-5">Total de Tarefas : {tasks.length}</div>
+		</div>
 	</div>
 </div>
