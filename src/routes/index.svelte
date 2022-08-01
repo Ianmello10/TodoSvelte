@@ -1,10 +1,17 @@
+
+<svelte:head> 
+   
+<title>SvelteTodo</title>
+
+</svelte:head>
+
 <script>
 	import { each } from 'svelte/internal';
 	import '../app.css';
 	import Addimg from '../image/add-outline.svg';
 	import Trashimg from '../image/trash-outline.svg';
 
-	 let tasks = [];
+	let tasks = [];
 	let msg = '';
 
 	function addTask() {
