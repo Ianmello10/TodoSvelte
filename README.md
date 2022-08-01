@@ -1,1 +1,1 @@
-## Todo make with sveltekit !
+## Todo made with sveltekit !
