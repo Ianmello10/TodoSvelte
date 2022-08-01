@@ -24,6 +24,5 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sitemap-generator": "^8.5.1"
 	}
 }
