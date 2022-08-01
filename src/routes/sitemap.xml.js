@@ -1,18 +1,14 @@
-import fs from 'fs';
+const SitemapGenerator = require('sitemap-generator');
 
-export async function get() {
-	try {
-		const data = fs.readFileSync('sitemap.xml', 'utf8');
+// create generator
+const generator = SitemapGenerator('https://todo-svelte-red.vercel.app/', {
+  stripQuerystring: false
+});
 
-		return {
-			headers: {
-				'Content-Type': 'application/xml'
-			},
-			body: data
-		};
-	} catch (e) {
-		return {
-			body: 'Error'
-		};
-	}
-}
+// register event listeners
+generator.on('done', () => {
+  // sitemaps created
+});
+
+// start the crawler
+generator.start();
